@@ -1,0 +1,400 @@
+[
+  {
+    "question_key": 0,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "The given style tag contains class selectors, but there are no corresponding classes in the code. As a result, the color blue is applied to the contents of the div tag, causing the heading color to appear blue.",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "What color will be applied to the text \"heading\"?",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_HTML_CSS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_CSS_DISPLAY_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "e830285d-f1e3-46e8-8bcf-638e15b76860",
+        "wrong_answers": ["Yellow", "Red", "Green"],
+        "output": ["Blue"]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": "<style type=\"text/css\">\n    .heading { color: red; }\n    div { color: blue; }\n    .P { color: yellow; }\n    .h1 + div { color: green; }\n</style>\n<h1>\n  <р>\n    <div><span>heading</span></div>\n  </р>\n</h1>",
+        "default_code": true
+      }
+    ]
+  },
+  {
+    "question_key": 1,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "In CSS, the class selector has higher specificity than the element selector. Therefore, the text inside the paragraph with class 'class' will be red, not blue. Specificity is a key concept in CSS that determines which styles are applied when there is a conflict. ",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "What color will the text be in the following construction? <plaintext><p class=\"class\">text</p>",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_HTML_CSS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_CSS_DISPLAY_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "1fde98bc-c596-4237-88ef-849c9a8cb339",
+        "wrong_answers": ["Blue", "Black", "Green"],
+        "output": ["Red"]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": ".class {color: red;}\np {color: blue;}",
+        "default_code": true
+      }
+    ]
+  },
+  {
+    "question_key": 2,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "The ':first-child ' pseudo-class targets the first element of its type within a parent element. In this case, it will select the first p tag within first .Topin class. The other options are not valid CSS pseudo-classes.",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "Which of the following option will highlight the first  p tag in the first Topin class, but not the other p tags in the other classes.",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_HTML_CSS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_CSS_DISPLAY_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "04dbbc61-4465-4865-b83c-2c81a4481a98",
+        "wrong_answers": [
+          ".Topin p:first-of-type { color: red; }",
+          ".Topin p:first-of-class { color: red; }",
+          ".Topin p:first-of-line { color: red; }"
+        ],
+        "output": [".Topin p:first-child { color: red; }"]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": "<div class=\"Topin\">  \n<p>Topin is an online test hosting and evaluation system</p>  \n<p>I am learning from NXTWAVE learning platform</p>\n</div>\n<div class=\"Topin\">   \n<h1>Topin</h1>     \n<p>Candidates can take the test online.</p>     \n<p>Recruiter creates an online test and invite candidates</p>\n</div>",
+        "default_code": true
+      }
+    ]
+  },
+  {
+    "question_key": 3,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "In CSS, when you specify three values for margin, they represent the top, right/left, and bottom margins, respectively. The right and left margins are equal to the second value. Therefore, 'span { margin: 10px 5px 15px 5px; }' is equivalent to the given style.",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "Which of the following is equal to the given style?",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_HTML_CSS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_CSS_DISPLAY_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "9c895510-dbfe-4aff-b795-66defcc3d109",
+        "wrong_answers": [
+          "span { margin: 10px 5px 15px 10px; }",
+          "span { margin: 10px 5px 15px 15px; }",
+          "The style is invalid."
+        ],
+        "output": ["span { margin: 10px 5px 15px 5px; }"]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": "span {margin: 10px 5px 15px; }",
+        "default_code": true
+      }
+    ]
+  },
+  {
+    "question_key": 4,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "The correct selector is 'a:hover span{}' because it selects the ‹span› element that is a child of an ‹a› element being hovered over. The other options are incorrect due to improper use of the class selector or incorrect structure.",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "Which of these selectors are correct for the ‹span› tag in the following construction?",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_HTML_CSS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_CSS_DISPLAY_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "6772a0c8-d9af-4e95-88d5-9305d0c68fe4",
+        "wrong_answers": [
+          "a:hover > target {}",
+          "a.target:hover span{}",
+          "target a:hover span {}"
+        ],
+        "output": ["a:hover span{}"]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": "<a href=\"#\" target=\"_blank\"><span class=\"target\"></span></a>",
+        "default_code": true
+      }
+    ]
+  },
+  {
+    "question_key": 5,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "The 'with' statement extends the scope chain for a block with an object's properties. This means 'x' would refer to 'obj.x', but 'y' is not defined on 'obj', so it refers to the 'y' defined outside the 'with' block, which is '1'.",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "Which of the following is the correct output for the following JavaScript code?",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_JS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_JS_DATA_TYPES_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "c97ee740-f4b5-4b84-87dd-31323afc4e58",
+        "wrong_answers": ["6", "19", "Error"],
+        "output": ["1"]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": "var x=6,y=1\nvar obj = { x:19}\nwith(obj)\n{    \nconsole.log(y)\n}",
+        "default_code": true
+      }
+    ]
+  },
+  {
+    "question_key": 6,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "In CSS, when you provide four values for border-style, they apply to top, right, bottom, and left borders respectively. So, 'dotted solid double dashed' corresponds to top, right, bottom, and left borders in that order. Learning Point: Remember the clockwise notation for CSS properties that accept up to four values.",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "What will be the output of the following CSS code?",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_HTML_CSS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_CSS_DISPLAY_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "cbfc2ed8-b643-4136-8b08-892677a7f811",
+        "wrong_answers": [
+          "Box having dotted bottom outline, solid right outline, double top outline, and dashed left outline",
+          "Box having dotted bottom outline, solid left outline, double top outline, and dashed left outline",
+          "Box having dotted top outline, solid left outline, double bottom outline and dashed right outline"
+        ],
+        "output": [
+          "Box having dotted top outline, solid right outline, double bottom outline, and dashed left outline"
+        ]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": "div {\nborder-width: 5px; \nborder-style: dotted solid double dashed;\n}",
+        "default_code": true
+      }
+    ]
+  },
+  {
+    "question_key": 8,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "In CSS, the 'border' property defines the border around an element, while the 'outline' property is a line drawn around elements, outside the border edge. The correct output is that all span elements will have a red border and a green dotted outline.",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "What will be the output of the following CSS code snippet?",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_HTML_CSS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_CSS_DISPLAY_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "8059ac68-694f-4ec7-8259-46bb25035c1c",
+        "wrong_answers": [
+          "All span elements will have a green thick border and a red outline",
+          "All span elements will have an outer green dotted border and an inner red border",
+          "All span elements will have an outer red border and inner green dotted border"
+        ],
+        "output": [
+          "All span elements will have a red border and a green dotted outline"
+        ]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": "span {\nborder: 1px solid red; \noutline: green dotted thick;\n}",
+        "default_code": true
+      }
+    ]
+  },
+  {
+    "question_key": 9,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "The given code is a simple while loop that starts with count at 0 and increments it until it is less than 10. Each time through the loop, it prints the current value of count. Therefore, it will print the numbers 0 through 9 in sequence.",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "What will happen, if the following JavaScript code is executed?",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_HTML_CSS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_JS_OPERATORS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "57171432-08a1-43d0-b896-8c9bdd7714b6",
+        "wrong_answers": [
+          "An error is displayed",
+          "01234567899 is displayed",
+          "The value of count from 0 to 9 is displayed in the console"
+        ],
+        "output": ["0123456789 is displayed"]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": "var count =0;\nwhile (count <10)\n{  \nconsole.log(count);  \ncount++;\n}",
+        "default_code": true
+      }
+    ]
+  },
+  {
+    "question_key": 10,
+    "skills": [],
+    "toughness": null,
+    "short_text": "",
+    "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+    "explanation_for_answer": {
+      "content": "The variable 'result' is not initialized before using '+=' operator, which leads to 'undefined' at the beginning. The switch statement falls through each case because there are no 'break' statements, concatenating '6 0' to 'undefined'.",
+      "content_type": "MARKDOWN"
+    },
+    "question_text": "Which of the following is the correct output for the following JavaScript code?",
+    "multimedia": [],
+    "content_type": "HTML",
+    "tag_names": [
+      "TOPIC_JS_CODING_ANALYSIS_CODING_ANALYSIS",
+      "SUB_TOPIC_JS_CONDITIONAL_CODING_ANALYSIS_CODING_ANALYSIS",
+      "DIFFICULTY_MEDIUM",
+      "SOURCE_NI_ASSESSMENT_DARWINBOX",
+      "IN_OFFLINE_EXAM"
+    ],
+    "input_output": [
+      {
+        "input": "",
+        "question_id": "72e9a0b5-805c-41fc-ae64-d55a0b3f9ef9",
+        "wrong_answers": ["0", "10", "33"],
+        "output": ["undefined 6  0 "]
+      }
+    ],
+    "code_metadata": [
+      {
+        "is_editable": false,
+        "language": "NODE_JS",
+        "code_data": "var grade='D';\nvar result;\nswitch(grade)\n{\n   case'A':\n          result+=\" 10 \";\n   case'B':\n          result+=\" 9 \";\n   case 'C':\n          result += \" 8 \";\n   case'D':\n          result += \" 6 \";\n   default:\n          result+=\" 0 \";\n}\nconsole.log(result);",
+        "default_code": true
+      }
+    ]
+  }
+]

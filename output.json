@@ -1,0 +1,200 @@
+[
+    {
+        "question_id": "57dac268-835f-404a-83a7-cb5030076d23",
+        "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+        "short_text": "",
+        "question_text": "What function is required to properly update the state in the given React code snippet?",
+        "question_key": 0,
+        "content_type": "HTML",
+        "multimedia_count": 0,
+        "multimedia_format": [],
+        "multimedia_url": [],
+        "thumbnail_url": [],
+        "tag_names": [
+            "TOPIC_REACT_CODING_ANALYSIS",
+            "SUB_TOPIC_REACT_STATE",
+            "DIFFICULTY_MEDIUM",
+            "SOURCE_NI_ASSESSMENT_STEELEYE",
+            "IN_OFFLINE_EXAM"
+        ],
+        "c_options": [
+            "this.setState"
+        ],
+        "w_options": [
+            "this.updateState",
+            "this.state.update",
+            "this.updateState"
+        ],
+        "options_content_type": "TEXT",
+        "code_data": "handleClick() {\n    <FUNCTION> (prevState => ({\n        isToggleOn: !prevState.isToggleOn\n    }));\n}",
+        "code_language": "NODE_JS",
+        "explanation": "In React, the 'this.setState' function is used to update the component's state object. It takes an updater function as an argument, which provides the previous state and returns the new state.",
+        "explanation_content_type": "MARKDOWN",
+        "toughness": null
+    },
+    {
+        "question_id": "7234bd9e-6487-4359-8a1f-58111ad2ed4d",
+        "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+        "short_text": "",
+        "question_text": "What will the following JavaScript code output?",
+        "question_key": 1,
+        "content_type": "HTML",
+        "multimedia_count": 0,
+        "multimedia_format": [],
+        "multimedia_url": [],
+        "thumbnail_url": [],
+        "tag_names": [
+            "TOPIC_JS_CODING_ANALYSIS_CODING_ANALYSIS",
+            "SUB_TOPIC_JS_FUNCTIONS_CODING_ANALYSIS_CODING_ANALYSIS",
+            "DIFFICULTY_MEDIUM",
+            "SOURCE_NI_ASSESSMENT_STEELEYE",
+            "IN_OFFLINE_EXAM"
+        ],
+        "c_options": [
+            "Number 4 alerted four times"
+        ],
+        "w_options": [
+            "undefined",
+            "Number 0 alerted 4 times",
+            "Numbers 1, 2, 3, 4 alerted"
+        ],
+        "options_content_type": "TEXT",
+        "code_data": "for (var i = 0; i < 4; i++) {\n     setTimeout (function() { alert(i); }, 1000 + i);\n}",
+        "code_language": "NODE_JS",
+        "explanation": "The loop uses 'var' which has function scope, not block scope. So, after the loop ends, 'i' is 4. The 'setTimeout' functions are called after the loop ends, each alerting the final value of 'i', which is 4.",
+        "explanation_content_type": "MARKDOWN",
+        "toughness": null
+    },
+    {
+        "question_id": "c26e32bf-9715-4462-b71e-2cae88936b2e",
+        "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+        "short_text": "",
+        "question_text": "What will the following JavaScript code output?",
+        "question_key": 2,
+        "content_type": "HTML",
+        "multimedia_count": 0,
+        "multimedia_format": [],
+        "multimedia_url": [],
+        "thumbnail_url": [],
+        "tag_names": [
+            "TOPIC_JS_CODING_ANALYSIS_CODING_ANALYSIS",
+            "SUB_TOPIC_JS_FUNCTIONS_CODING_ANALYSIS_CODING_ANALYSIS",
+            "DIFFICULTY_MEDIUM",
+            "SOURCE_NI_ASSESSMENT_STEELEYE",
+            "IN_OFFLINE_EXAM"
+        ],
+        "c_options": [
+            "6"
+        ],
+        "w_options": [
+            "null",
+            "undefined",
+            "ReferenceError: b is not defined"
+        ],
+        "options_content_type": "TEXT",
+        "code_data": "(function() {\n    var a = b = 6;\n})();\n\nconsole.log(b);",
+        "code_language": "NODE_JS",
+        "explanation": "The variable 'b' is declared without 'var', making it a global variable. Even though 'a' is local to the function, 'b' is accessible outside, hence '6' is logged. ",
+        "explanation_content_type": "MARKDOWN",
+        "toughness": null
+    },
+    {
+        "question_id": "7c19909f-a10e-49f1-a850-7097886cfe1c",
+        "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+        "short_text": "",
+        "question_text": "What will the following JavaScript code output?",
+        "question_key": 3,
+        "content_type": "HTML",
+        "multimedia_count": 0,
+        "multimedia_format": [],
+        "multimedia_url": [],
+        "thumbnail_url": [],
+        "tag_names": [
+            "TOPIC_JS_CODING_ANALYSIS_CODING_ANALYSIS",
+            "SUB_TOPIC_JS_FUNCTIONS_CODING_ANALYSIS_CODING_ANALYSIS",
+            "DIFFICULTY_MEDIUM",
+            "SOURCE_NI_ASSESSMENT_STEELEYE",
+            "IN_OFFLINE_EXAM"
+        ],
+        "c_options": [
+            "undefined and ReferenceError"
+        ],
+        "w_options": [
+            "ReferenceError and 17",
+            "Amsika and undefined",
+            "Amsika and ReferenceError"
+        ],
+        "options_content_type": "TEXT",
+        "code_data": "SayHi() {\n    console.log(name);\n    console.log(age);\n    var name = 'Amsika';\n    let age = 17;\n}\nSayHi();",
+        "code_language": "NODE_JS",
+        "explanation": "In JavaScript, variables declared with 'var' are hoisted to the top of their scope, but their values are not. This means 'name' is undefined when logged. 'let' declarations are not hoisted, so trying to access 'age' before declaration results in a ReferenceError.",
+        "explanation_content_type": "MARKDOWN",
+        "toughness": null
+    },
+    {
+        "question_id": "30838ff1-d618-440e-8b3c-4d4efe5932b6",
+        "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+        "short_text": "",
+        "question_text": "What will the following JavaScript code output?",
+        "question_key": 4,
+        "content_type": "HTML",
+        "multimedia_count": 0,
+        "multimedia_format": [],
+        "multimedia_url": [],
+        "thumbnail_url": [],
+        "tag_names": [
+            "TOPIC_JS_CODING_ANALYSIS_CODING_ANALYSIS",
+            "SUB_TOPIC_JS_DATA_TYPES_CODING_ANALYSIS_CODING_ANALYSIS",
+            "DIFFICULTY_MEDIUM",
+            "SOURCE_NI_ASSESSMENT_STEELEYE",
+            "IN_OFFLINE_EXAM"
+        ],
+        "c_options": [
+            "Hello"
+        ],
+        "w_options": [
+            "TypeError",
+            "Hey!",
+            "ReferenceError"
+        ],
+        "options_content_type": "TEXT",
+        "code_data": "let c = { greeting:'Hey !' };\nlet d;\nd = c;\nc.greeting = 'Hello';\nconsole.log(d.greeting);",
+        "code_language": "NODE_JS",
+        "explanation": "In JavaScript, objects are assigned by reference. When 'd' is set to 'c', both variables point to the same object. Changing 'c.greeting' also affects 'd.greeting' because they refer to the same object. The output is 'Hello'.",
+        "explanation_content_type": "MARKDOWN",
+        "toughness": null
+    },
+    {
+        "question_id": "b8e63237-cd90-464b-8080-4a8e1345df1a",
+        "question_type": "CODE_ANALYSIS_MULTIPLE_CHOICE",
+        "short_text": "",
+        "question_text": "What is the event.target when clicking the button?",
+        "question_key": 5,
+        "content_type": "HTML",
+        "multimedia_count": 0,
+        "multimedia_format": [],
+        "multimedia_url": [],
+        "thumbnail_url": [],
+        "tag_names": [
+            "TOPIC_REACT_CODING_ANALYSIS",
+            "SUB_TOPIC_REACT_BASIC",
+            "DIFFICULTY_MEDIUM",
+            "SOURCE_NI_ASSESSMENT_STEELEYE",
+            "IN_OFFLINE_EXAM"
+        ],
+        "c_options": [
+            "button"
+        ],
+        "w_options": [
+            "Outer div",
+            "Inner div",
+            "An array of all nested elements."
+        ],
+        "options_content_type": "TEXT",
+        "code_data": "<div onclick=\"console.log('first div')\">\n    <div onclick=\"console.log('second div')\">\n        <button onclick=\"console.log('button')\">\n            Click!\n        </button>\n    </div>\n</div>",
+        "code_language": "NODE_JS",
+        "explanation": "When you click the button, the event.target refers to the element that triggered the event, which is the button itself. The event then bubbles up to the parent elements, but the event.target remains the button where the click occurred.",
+        "explanation_content_type": "MARKDOWN",
+        "toughness": null
+    }
+]
